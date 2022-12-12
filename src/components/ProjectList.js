@@ -3,76 +3,80 @@ import ProjectItem from "./ProjectItem";
 import project1 from "../images/project1.png";
 import project2 from "../images/project2.jpg";
 import project3 from "../images/project3.webp";
+import projectsData from "../data/projects";
 
 function ProjectList() {
+  console.log(projectsData[0].src);
+  const projectElements = projectsData.map((project, i) => {
+    return (
+      <article key={i} className={`carousel-item ${i === 0 ? `active` : ``}`}>
+        <section>
+          <h2>{project.title}</h2>
+          <p>{project.year}</p>
+        </section>
+        <div className="project__wrapper">
+          <img
+            className="d-block  project__img"
+            src={require("../images/" + project.title + ".png")}
+            alt=""
+          />
+        </div>
+      </article>
+    );
+  });
+
   return (
     <main /* className="project" */>
       {/*  <ProjectItem img={project1} />
       <ProjectItem img={project2} />
       <ProjectItem img={project3} /> */}
       <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
+        id="carouselIndicators"
+        className="carousel slide"
         data-bs-ride="true"
       >
-        <div class="carousel-indicators">
+        <div className="carousel-indicators">
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carouselIndicators"
             data-bs-slide-to="0"
-            class="active"
+            className="active"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carouselIndicators"
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carouselIndicators"
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
         </div>
 
-        <div class="carousel-inner">
-          <article class="carousel-item active ">
-            <div className="project__wrapper">
-              <img src={project1} class=" project__img" alt="..." />
-            </div>
-          </article>
-          <article class="carousel-item ">
-            <div className="project__wrapper">
-              <img src={project2} class=" project__img" alt="..." />
-            </div>
-          </article>
-          <article class="carousel-item ">
-            <div className="project__wrapper">
-              <img src={project3} class=" project__img" alt="..." />
-            </div>
-          </article>
-        </div>
+        <div className="carousel-inner">{projectElements}</div>
       </div>
       <button
-        class="carousel-control-prev"
+        className="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carouselIndicators"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        className="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carouselIndicators"
         data-bs-slide="next"
       >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
       </button>
     </main>
   );
