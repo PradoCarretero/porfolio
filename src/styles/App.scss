@@ -1,0 +1,15 @@
+@import "core/variables";
+body {
+  background-color: rgb(41, 41, 41);
+  color: rgb(140, 140, 140);
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  padding: 1.5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*  overflow: hidden; */
+}

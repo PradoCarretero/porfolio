@@ -1,0 +1,13 @@
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow-x: scroll; */
+}
+
+.project__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

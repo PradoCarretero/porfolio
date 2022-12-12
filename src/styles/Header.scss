@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    height: 30px;
+  }
+  &__nav {
+    display: flex;
+    gap: 1em;
+  }
+}
