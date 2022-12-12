@@ -11,28 +11,69 @@ function ProjectList() {
       <ProjectItem img={project2} />
       <ProjectItem img={project3} /> */}
       <div
-        id="carouselExampleSlidesOnly"
+        id="carouselExampleIndicators"
         class="carousel slide"
-        data-bs-ride="carousel"
+        data-bs-ride="true"
       >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
         <div class="carousel-inner">
-          <article class="carousel-item active">
+          <article class="carousel-item active ">
             <div className="project__wrapper">
-              <img src={project1} class="d-block project__img" alt="..." />
+              <img src={project1} class=" project__img" alt="..." />
             </div>
           </article>
-          <article class="carousel-item">
+          <article class="carousel-item ">
             <div className="project__wrapper">
-              <img src={project2} class="d-block project__img" alt="..." />
+              <img src={project2} class=" project__img" alt="..." />
             </div>
           </article>
-          <article class="carousel-item">
+          <article class="carousel-item ">
             <div className="project__wrapper">
-              <img src={project3} class="d-block project__img" alt="..." />
+              <img src={project3} class=" project__img" alt="..." />
             </div>
           </article>
         </div>
       </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </main>
   );
 }
