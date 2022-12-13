@@ -6,10 +6,9 @@ import ProjectItem from "./ProjectItem";
 import projectsData from "../data/projects";
 
 function ProjectList() {
-  console.log(projectsData[0].src);
   const projectElements = projectsData.map((project, i) => {
     return (
-      <article key={i} className="item">
+      <article key={i} className="item project__wrapper">
         <img
           className="project__img"
           src={require("../images/" + project.title + ".png")}
@@ -23,10 +22,10 @@ function ProjectList() {
     <main>
       <OwlCarousel
         className="owl-theme"
-        items="3"
-        autoplay
+        items="1"
         nav
         dots
+        autoplay
         loop
         margin={10}
         autoplayHoverPause
