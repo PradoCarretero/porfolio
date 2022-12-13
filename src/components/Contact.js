@@ -1,7 +1,7 @@
 import "../styles/Contact.scss";
 
 function Contact() {
-  return <main className="">Contacto</main>;
+  return <main className=""></main>;
 }
 Contact.defaultProps = {};
 
