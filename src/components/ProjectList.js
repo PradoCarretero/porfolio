@@ -2,16 +2,16 @@ import "../styles/ProjectList.scss";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import ProjectItem from "./ProjectItem";
 import projectsData from "../data/projects";
 
 function ProjectList() {
   const projectElements = projectsData.map((project, i) => {
     return (
       <article key={i} className="item project__wrapper">
+        <div className="project__overlay"></div>
         <img
           className="project__img"
-          src={require("../images/" + project.title + ".png")}
+          src={require("../images/" + project.nameimg + ".png")}
           alt=""
         />
       </article>
@@ -22,8 +22,7 @@ function ProjectList() {
     <main>
       <OwlCarousel
         className="owl-theme"
-        items="1"
-        nav
+        items="3"
         dots
         autoplay
         loop

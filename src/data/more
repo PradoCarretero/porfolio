@@ -1,0 +1,10 @@
+    {
+    "title": "Gestión de usuarios",
+    "subtitle": "Prueba técnica",
+    "tecnologies": "React, MUI, API REST",
+    "nameimg": "",
+    "description": " Sistema de gestión de usuarios realizada con ReactJS, material UI https://material-ui.com y utiliza además una api para obtener, modificar, borrar y crear usuarios. Realizado sobre una base de back-end entregada como parte del enunciado. ",
+    "github": "https://github.com/PradoCarretero/prueba-tecnica-react",
+    "page": "",
+    "year": 2002
+  },

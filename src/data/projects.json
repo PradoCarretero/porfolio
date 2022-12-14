@@ -1,14 +1,62 @@
 [
   {
-    "title": "project1",
+    "title": "Sundrink",
+    "subtitle": "Trabajo individual de Adalab",
+    "tecnologies": "JS, API REST",
+    "nameimg": "sundrink",
+    "description": "",
+    "github": "https://github.com/PradoCarretero/js-modulo-2-evaluacion-final-PradoCarretero",
+    "page": "http://beta.adalab.es/modulo-2-evaluacion-final-PradoCarretero/",
     "year": 2002
   },
   {
-    "title": "project1",
+    "title": "Awesome profile cards",
+    "subtitle": "Trabajo grupal de Adalab",
+    "tecnologies": "react, node, API REST, Express JS, SQL",
+    "nameimg": "awesome-profile-cards",
+    "description": "",
+    "github": "https://github.com/PradoCarretero/node-project-promo-p-module-4-team-2",
+    "page": "https://hook-team.herokuapp.com/",
     "year": 2002
   },
   {
-    "title": "project1",
+    "title": "Owen Wilson's WOW",
+    "subtitle": "Trabajo individual de Adalab",
+    "tecnologies": "react, API REST",
+    "nameimg": "owen-wilson",
+    "github": "https://github.com/PradoCarretero/react-modulo-3-evaluacion-final-PradoCarretero",
+    "description": "http://beta.adalab.es/modulo-3-evaluacion-final-PradoCarretero/o",
+    "page": "http://beta.adalab.es/modulo-3-evaluacion-final-PradoCarretero/",
+    "year": 2002
+  },
+  {
+    "title": "Buscador de Recetas Meal Flix",
+    "subtitle": "Prueba técnica",
+    "tecnologies": "Vue, Tailwind, API REST",
+    "nameimg": "meal-flix",
+    "description": "project1",
+    "github": "https://github.com/PradoCarretero/prueba-tecnica-vue/blob/main/src/App.vue",
+    "page": "",
+    "year": 2002
+  },
+  {
+    "title": "Miudiñas",
+    "subtitle": "Trabajo grupal de Adalab",
+    "tecnologies": "CSS, SCSS, HTML",
+    "nameimg": "miudinas",
+    "description": "",
+    "github": "https://github.com/Adalab/project-promo-p-module-1-team-4",
+    "page": "https://beta.adalab.es/project-promo-p-module-1-team-4/",
+    "year": 2002
+  },
+  {
+    "title": "Openspaces",
+    "subtitle": "Trabajo individual de Adalab",
+    "tecnologies": "CSS, SCSS, HTML",
+    "nameimg": "openspaces",
+    "description": "",
+    "github": "https://github.com/PradoCarretero/scss-html-modulo-1-evaluacion-final-PradoCarretero",
+    "page": "http://beta.adalab.es/modulo-1-evaluacion-final-PradoCarretero/",
     "year": 2002
   }
 ]
