@@ -3,5 +3,6 @@
   color: rgb(140, 140, 140);
   &:hover {
     color: orangered;
+    transition: 0.8s ease;
   }
 }

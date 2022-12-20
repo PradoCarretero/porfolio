@@ -44,20 +44,32 @@ function ProjectList() {
   };
   const getIconSql = (project) => {
     if (project.tecnologies.toLowerCase().includes("sql")) {
-      return <img src={sqlIcon} className="project__icon" alt=""></img>;
+      return (
+        <img
+          src={sqlIcon}
+          className="project__overlay__icon"
+          alt="sql icon"
+        ></img>
+      );
     }
   };
   const getIconTailwind = (project) => {
     if (project.tecnologies.toLowerCase().includes("tailwind")) {
-      return <img src={tailwindIcon} className="project__icon" alt=""></img>;
+      return (
+        <img
+          src={tailwindIcon}
+          className="project__overlay__icon"
+          alt="tailwind icon"
+        ></img>
+      );
     }
   };
   const projectElements = projectsData.map((project, i) => {
     return (
-      <article key={i} className="item project__wrapper">
-        <section className="project__overlay project__overlay__text">
+      <article key={i} className="item project">
+        <section className=" project__circle project__overlay">
           <h2>{project.title}</h2>
-          <section>
+          <section className="project__overlay__tech">
             {getIconHtml(project)}
             {getIconCss(project)}
             {getIconTailwind(project)}
@@ -70,7 +82,7 @@ function ProjectList() {
           </section>
         </section>
         <img
-          className="project__img"
+          className="project__img project__circle"
           src={require("../images/" + project.nameimg + ".png")}
           alt=""
         />
