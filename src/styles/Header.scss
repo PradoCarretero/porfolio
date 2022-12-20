@@ -1,11 +1,18 @@
 .header {
+  padding-bottom: 1.5em;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   &__logo {
-    height: 30px;
+    /* height: 30px; */
+    width: 70vw;
+    max-width: 300px;
   }
   &__nav {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     gap: 1em;
   }
 }

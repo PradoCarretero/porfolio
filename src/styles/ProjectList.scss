@@ -5,13 +5,6 @@
 }
 
 .project {
-  //PARA 1 ITEM
-  /*   &__wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
   &__img {
     border-radius: 40em;
     aspect-ratio: 1/1;
@@ -37,8 +30,12 @@
       text-decoration: none;
       color: white;
     }
+    &__icon {
+      height: 1.5em;
+    }
     &:hover {
       opacity: 0.94;
+      cursor: pointer;
     }
   }
 }

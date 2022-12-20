@@ -2,7 +2,7 @@
   {
     "title": "Sundrink",
     "subtitle": "Trabajo individual de Adalab",
-    "tecnologies": "JS, API REST",
+    "tecnologies": "html, css, JS, API REST",
     "nameimg": "sundrink",
     "description": "",
     "github": "https://github.com/PradoCarretero/js-modulo-2-evaluacion-final-PradoCarretero",
@@ -12,7 +12,7 @@
   {
     "title": "Awesome profile cards",
     "subtitle": "Trabajo grupal de Adalab",
-    "tecnologies": "react, node, API REST, Express JS, SQL",
+    "tecnologies": "html, css, react, node, API REST, Express JS, SQL",
     "nameimg": "awesome-profile-cards",
     "description": "",
     "github": "https://github.com/PradoCarretero/node-project-promo-p-module-4-team-2",
@@ -22,7 +22,7 @@
   {
     "title": "Owen Wilson's WOW",
     "subtitle": "Trabajo individual de Adalab",
-    "tecnologies": "react, API REST",
+    "tecnologies": "html, css,react, API REST",
     "nameimg": "owen-wilson",
     "github": "https://github.com/PradoCarretero/react-modulo-3-evaluacion-final-PradoCarretero",
     "description": "http://beta.adalab.es/modulo-3-evaluacion-final-PradoCarretero/o",
@@ -32,7 +32,7 @@
   {
     "title": "Buscador de Recetas Meal Flix",
     "subtitle": "Prueba técnica",
-    "tecnologies": "Vue, Tailwind, API REST",
+    "tecnologies": "html,Vue, Tailwind, API REST",
     "nameimg": "meal-flix",
     "description": "project1",
     "github": "https://github.com/PradoCarretero/prueba-tecnica-vue/blob/main/src/App.vue",
@@ -42,7 +42,7 @@
   {
     "title": "Miudiñas",
     "subtitle": "Trabajo grupal de Adalab",
-    "tecnologies": "CSS, SCSS, HTML",
+    "tecnologies": "html, CSS, SCSS, HTML",
     "nameimg": "miudinas",
     "description": "",
     "github": "https://github.com/Adalab/project-promo-p-module-1-team-4",

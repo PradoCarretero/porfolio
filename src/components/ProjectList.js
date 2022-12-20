@@ -3,42 +3,71 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import projectsData from "../data/projects";
+import sqlIcon from "../images/sql.png";
+import tailwindIcon from "../images/tailwind.png";
 
 function ProjectList() {
-  let htmlIcon = "";
-  const getIcon = (project) => {
-    if (project.tecnologies.toLowerCase().includes("react"))
-      htmlIcon += <i className="fa-brands fa-react"></i>;
-    else if (project.tecnologies.toLowerCase().includes("html"))
-      htmlIcon += <i className="fa-brands fa-html5"></i>;
-    else if (project.tecnologies.toLowerCase().includes("css"))
-      htmlIcon += <i className="fa-brands fa-css3"></i>;
-    return htmlIcon;
+  const getIconReact = (project) => {
+    if (project.tecnologies.toLowerCase().includes("react")) {
+      return <i className="fa-brands fa-xl fa-react"></i>;
+    }
+  };
+  const getIconHtml = (project) => {
+    if (project.tecnologies.toLowerCase().includes("html")) {
+      return <i className="fa-brands fa-xl fa-html5"></i>;
+    }
+  };
+  const getIconCss = (project) => {
+    if (project.tecnologies.toLowerCase().includes("css")) {
+      return <i className="fa-brands fa-xl fa-css3"></i>;
+    }
+  };
+  const getIconJs = (project) => {
+    if (project.tecnologies.toLowerCase().includes("js")) {
+      return <i className="fa-brands fa-xl fa-js"></i>;
+    }
+  };
+  const getIconNode = (project) => {
+    if (project.tecnologies.toLowerCase().includes("node")) {
+      return <i className="fa-brands fa-xl fa-node-js"></i>;
+    }
+  };
+  const getIconVue = (project) => {
+    if (project.tecnologies.toLowerCase().includes("vue")) {
+      return <i className="fa-brands fa-xl fa-vuejs"></i>;
+    }
+  };
+  const getIconApi = (project) => {
+    if (project.tecnologies.toLowerCase().includes("api")) {
+      return <i className="fa-solid fa-xl fa-cloud"></i>;
+    }
+  };
+  const getIconSql = (project) => {
+    if (project.tecnologies.toLowerCase().includes("sql")) {
+      return <img src={sqlIcon} className="project__icon" alt=""></img>;
+    }
+  };
+  const getIconTailwind = (project) => {
+    if (project.tecnologies.toLowerCase().includes("tailwind")) {
+      return <img src={tailwindIcon} className="project__icon" alt=""></img>;
+    }
   };
   const projectElements = projectsData.map((project, i) => {
     return (
       <article key={i} className="item project__wrapper">
         <section className="project__overlay project__overlay__text">
           <h2>{project.title}</h2>
-          <a
-            className=""
-            href={project.github}
-            title={`ir a github de${project.title}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i class="fa-brands fa-github project__overlay__text"></i>
-          </a>
-          <a
-            className=""
-            href={project.page}
-            title={`ir a la página de${project.title}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i class="fa-solid fa-eye project__overlay__text"></i>
-          </a>
-          {getIcon(project)}
+          <section>
+            {getIconHtml(project)}
+            {getIconCss(project)}
+            {getIconTailwind(project)}
+            {getIconReact(project)}
+            {getIconJs(project)}
+            {getIconVue(project)}
+            {getIconNode(project)}
+            {getIconApi(project)}
+            {getIconSql(project)}
+          </section>
         </section>
         <img
           className="project__img"
@@ -53,7 +82,7 @@ function ProjectList() {
     <main>
       <OwlCarousel
         className="owl-theme"
-        items="3"
+        items="1"
         dots
         autoplay
         loop
