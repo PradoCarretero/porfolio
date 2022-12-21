@@ -4,7 +4,9 @@ function Contact() {
   return (
     <main className="contact__txt">
       <p>Si quieres contactar conmigo puedes escribirme a:</p>
-      <p>p.carrete@gmail.com</p>
+      <p>
+        <b>p.carrete@gmail.com</b>
+      </p>
     </main>
   );
 }

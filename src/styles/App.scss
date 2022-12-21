@@ -12,12 +12,12 @@ body {
 
 .wrapper {
   font-family: "Raleway", sans-serif;
-  padding: 1.5em 3em;
+  margin: 1.5em 3em;
   &__structure {
     height: 100vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
   }
 }

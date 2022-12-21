@@ -16,9 +16,9 @@ function App() {
         <Route
           path="/"
           element={
-            <div className="wrapper wrapper__structure">
+            <div className="wrapper__structure wrapper ">
               <Header />
-              <ProjectList />
+              {/* <ProjectList /> */}
               <Footer />
             </div>
           }
@@ -46,7 +46,7 @@ function App() {
         <Route
           path="/contact"
           element={
-            <div className="wrapper">
+            <div className="wrapper wrapper__structure">
               <Header />
               <Contact />
               <Footer />
