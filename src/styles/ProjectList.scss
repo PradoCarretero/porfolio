@@ -19,11 +19,11 @@
   &__circle {
     border-radius: 40em;
     aspect-ratio: 1/1;
-    max-width: 40vh;
+    background-color: lightgray;
   }
   &__img {
+    max-width: 40vh;
     object-fit: contain;
-    background-color: lightgray;
   }
   &__overlay {
     height: 100%;

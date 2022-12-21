@@ -7,11 +7,12 @@
   &__logo {
     width: 75vw;
     min-width: 15.3em;
-    max-width: 300px;
+    max-width: 18.75em;
   }
   &__nav {
     display: flex;
     justify-content: space-between;
+    min-width: 15em;
     gap: 1em;
   }
 }

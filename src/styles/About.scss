@@ -1,1 +1,11 @@
-
+.about {
+  &__txt {
+    /* min-width: 15.3em; */
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 3.5em;
+    &__parg {
+      margin-top: 2em;
+    }
+  }
+}

@@ -1,16 +1,23 @@
 @import "core/variables";
 body {
   font-family: "Raleway", sans-serif;
+  strong,
+  b {
+    font-weight: 300;
+  }
+
   background-color: rgb(41, 41, 41);
   color: rgb(140, 140, 140);
 }
 
 .wrapper {
   font-family: "Raleway", sans-serif;
-  height: 100vh;
-  padding: 1.5em 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
+  padding: 1.5em 3em;
+  &__structure {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
 }

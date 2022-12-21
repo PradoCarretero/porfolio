@@ -6,7 +6,7 @@ import Header from "./Header";
 import ProjectList from "./ProjectList";
 import Footer from "./Footer";
 import About from "./About";
-import Training from "./Training";
+/* import Training from "./Training"; */
 import Contact from "./Contact";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route
           path="/"
           element={
-            <div className="wrapper">
+            <div className="wrapper wrapper__structure">
               <Header />
               <ProjectList />
               <Footer />
@@ -26,23 +26,23 @@ function App() {
         <Route
           path="/about-me"
           element={
-            <div className="wrapper">
+            <div className=" wrapper ">
               <Header />
               <About />
               <Footer />
             </div>
           }
         />
-        <Route
+        {/* <Route
           path="/training"
           element={
-            <div className="wrapper">
+            <div className="wrapper wrapper__structure">
               <Header />
               <Training />
               <Footer />
             </div>
           }
-        />
+        /> */}
         <Route
           path="/contact"
           element={
