@@ -16,9 +16,9 @@ function App() {
         <Route
           path="/"
           element={
-            <div className="wrapper__structure wrapper ">
+            <div className=" wrapper ">
               <Header />
-              {/* <ProjectList /> */}
+              <ProjectList />
               <Footer />
             </div>
           }

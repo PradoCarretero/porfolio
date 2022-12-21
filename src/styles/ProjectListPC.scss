@@ -12,19 +12,16 @@
 .owl-theme .owl-dots .owl-dot span {
   transition: all 0.8s ease !important;
 }
-
 .project {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   &__circle {
     border-radius: 40em;
     aspect-ratio: 1/1;
     background-color: lightgray;
   }
   &__img {
-    margin: 1em;
     max-width: 40vh;
     object-fit: contain;
   }
@@ -43,8 +40,9 @@
     background-color: rgb(140, 140, 140);
     opacity: 0;
     transition: opacity 0.8s;
+    color: white;
     &__tech {
-      color: orangered;
+      padding-top: 1.5em;
       display: flex;
       gap: 0.2em;
       align-items: center;
@@ -52,6 +50,8 @@
     &__icon {
       height: 1.5em;
       object-fit: contain;
+      display: inline-block;
+      display: inline-flexbox;
     }
     &:hover {
       opacity: 0.94;

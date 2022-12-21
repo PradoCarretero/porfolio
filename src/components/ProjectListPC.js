@@ -66,13 +66,9 @@ function ProjectList() {
   };
   const projectElements = projectsData.map((project, i) => {
     return (
-      <>
-        <article key={i} className="item project">
-          <img
-            className="project__img project__circle"
-            src={require("../images/" + project.nameimg + ".png")}
-            alt=""
-          />
+      <article key={i} className="item project">
+        <section className=" project__circle project__overlay">
+          <h2>{project.title}</h2>
           <section className="project__overlay__tech">
             {getIconHtml(project)}
             {getIconCss(project)}
@@ -84,8 +80,13 @@ function ProjectList() {
             {getIconApi(project)}
             {getIconSql(project)}
           </section>
-        </article>
-      </>
+        </section>
+        <img
+          className="project__img project__circle"
+          src={require("../images/" + project.nameimg + ".png")}
+          alt=""
+        />
+      </article>
     );
   });
 

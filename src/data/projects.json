@@ -30,7 +30,7 @@
     "year": 2002
   },
   {
-    "title": "Buscador de Recetas Meal Flix",
+    "title": "Meal Flix",
     "subtitle": "Prueba técnica",
     "tecnologies": "html,Vue, Tailwind, API REST",
     "nameimg": "meal-flix",
@@ -42,7 +42,7 @@
   {
     "title": "Miudiñas",
     "subtitle": "Trabajo grupal de Adalab",
-    "tecnologies": "html, CSS, SCSS, HTML",
+    "tecnologies": "HTML, CSS, Scss",
     "nameimg": "miudinas",
     "description": "",
     "github": "https://github.com/Adalab/project-promo-p-module-1-team-4",
