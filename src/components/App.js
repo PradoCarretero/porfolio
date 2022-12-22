@@ -3,12 +3,12 @@ import "../styles/App.scss";
 import "../styles/core/iconos.scss";
 import "../styles/core/mediaqueries.scss";
 import "../styles/core/links.scss";
+import "../styles/core/fonts.scss";
 import { Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import ProjectList from "./ProjectList";
 import Footer from "./Footer";
 import About from "./About";
-/* import Training from "./Training"; */
 import Contact from "./Contact";
 
 function App() {
@@ -28,23 +28,13 @@ function App() {
         <Route
           path="/about-me"
           element={
-            <div className="wrapper contact__wrapper">
+            <div className="wrapper">
               <Header />
               <About />
               <Footer />
             </div>
           }
         />
-        {/* <Route
-          path="/training"
-          element={
-            <div className="wrapper wrapper__structure">
-              <Header />
-              <Training />
-              <Footer />
-            </div>
-          }
-        /> */}
         <Route
           path="/contact"
           element={

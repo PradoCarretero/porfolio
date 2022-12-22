@@ -1,20 +1,13 @@
 .footer {
-  padding-top: 1.5em;
+  padding-top: 1.5rem;
   display: flex;
   flex-direction: column;
   &__items {
     width: 100%;
   }
   &__title {
-    padding-bottom: 0.5em;
     display: flex;
     justify-content: center;
     text-align: center;
-  }
-  &__nav {
-    display: flex;
-    justify-content: center;
-    gap: 0.2em;
-    /* justify-content: flex-end; */
   }
 }

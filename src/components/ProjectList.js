@@ -6,13 +6,13 @@ import projectsData from "../data/projects";
 import TechIconos from "./TechIconos";
 
 function ProjectList() {
-  const projectElements = projectsData.map((project, i) => {
+  const projectElements = projectsData.map((project) => {
     return (
       <>
-        <article key={i} className="item project">
+        <article key={project.id} className="item project">
           <section className="project__overlay project__circle">
             <h2>{project.title}</h2>
-            <TechIconos project={project} />
+            <TechIconos tecnologies={project.tecnologies} />
           </section>
           <img
             className="project__img project__circle"
@@ -20,7 +20,7 @@ function ProjectList() {
             alt=""
           />
           <div className="project__desktop">
-            <TechIconos project={project} />
+            <TechIconos tecnologies={project.tecnologies} />
           </div>
         </article>
       </>
@@ -48,10 +48,9 @@ function ProjectList() {
           <OwlCarousel
             className="owl-theme"
             items="3"
-            dots
             autoplay
             loop
-            margin={10}
+            margin={20}
             autoplayHoverPause
             autoplayTimeout="2000"
           >

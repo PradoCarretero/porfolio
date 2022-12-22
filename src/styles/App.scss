@@ -1,6 +1,8 @@
 @import "core/variables";
 body {
   font-family: "Raleway", sans-serif;
+  font-size: calc(0.8rem + 0.8vw);
+  line-height: 2em;
   strong,
   b {
     font-weight: 300;

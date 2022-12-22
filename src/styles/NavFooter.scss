@@ -1,0 +1,20 @@
+.footer {
+  &__nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.35em;
+
+    /* justify-content: flex-end; */
+    &__iconos {
+      color: rgb(41, 41, 41);
+      padding: 0.3em;
+      background-color: rgb(140, 140, 140);
+      border-radius: 100em;
+      &:hover {
+        background-color: orangered;
+        transition: 0.8s ease;
+      }
+    }
+  }
+}

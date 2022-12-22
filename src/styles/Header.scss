@@ -1,18 +1,30 @@
+@import "core/mediaqueries";
+
 .header {
-  padding-bottom: 1.5em;
+  padding-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @include desktop {
+    flex-direction: row;
+  }
   &__logo {
     width: 75vw;
-    min-width: 15.3em;
-    max-width: 18.75em;
+    min-width: 15.3rem;
+    max-width: 33rem;
+    @include desktop {
+      max-width: 15em;
+    }
   }
   &__nav {
     display: flex;
     justify-content: space-between;
-    min-width: 15em;
-    gap: 1em;
+    min-width: 15rem;
+    gap: 1rem;
+    @include desktop {
+      text-transform: uppercase;
+      gap: 6rem;
+    }
   }
 }

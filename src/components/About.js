@@ -3,7 +3,7 @@ import picture from "../images/me6.png";
 
 function About() {
   return (
-    <main className="">
+    <main className="about">
       <article className="about__txt">
         {/* <h2>Hola! Soy Prado!</h2> */}
 
