@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import imgname from "../images/logo-name.png";
 import "../styles/Header.scss";
+import "../styles/core/fonts.scss";
 
 function Header() {
   return (
-    <header className="header">
+    <header className="header font-1">
       <Link className="link" to="/" title="ir a home">
         <img
           src={imgname}
@@ -13,7 +14,7 @@ function Header() {
         />
       </Link>
 
-      <nav>
+      <nav className="font-1">
         <ul className="header__nav">
           <li>
             <Link className="link" to="/" title="ir a proyectos">

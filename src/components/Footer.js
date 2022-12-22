@@ -3,7 +3,7 @@ import "../styles/Footer.scss";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer font-1">
       <div className="footer__items"></div>
       <Link className="link footer__items" to="/" title="ir a home">
         <h2 className="footer__title ">front end developer</h2>

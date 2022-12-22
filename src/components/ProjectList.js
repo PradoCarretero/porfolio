@@ -3,107 +3,63 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import projectsData from "../data/projects";
-import sqlIcon from "../images/sql.png";
-import tailwindIcon from "../images/tailwind.png";
+import TechIconos from "./TechIconos";
 
 function ProjectList() {
-  const getIconReact = (project) => {
-    if (project.tecnologies.toLowerCase().includes("react")) {
-      return <i className="fa-brands fa-xl fa-react"></i>;
-    }
-  };
-  const getIconHtml = (project) => {
-    if (project.tecnologies.toLowerCase().includes("html")) {
-      return <i className="fa-brands fa-xl fa-html5"></i>;
-    }
-  };
-  const getIconCss = (project) => {
-    if (project.tecnologies.toLowerCase().includes("css")) {
-      return <i className="fa-brands fa-xl fa-css3"></i>;
-    }
-  };
-  const getIconJs = (project) => {
-    if (project.tecnologies.toLowerCase().includes("js")) {
-      return <i className="fa-brands fa-xl fa-js"></i>;
-    }
-  };
-  const getIconNode = (project) => {
-    if (project.tecnologies.toLowerCase().includes("node")) {
-      return <i className="fa-brands fa-xl fa-node-js"></i>;
-    }
-  };
-  const getIconVue = (project) => {
-    if (project.tecnologies.toLowerCase().includes("vue")) {
-      return <i className="fa-brands fa-xl fa-vuejs"></i>;
-    }
-  };
-  const getIconApi = (project) => {
-    if (project.tecnologies.toLowerCase().includes("api")) {
-      return <i className="fa-solid fa-xl fa-cloud"></i>;
-    }
-  };
-  const getIconSql = (project) => {
-    if (project.tecnologies.toLowerCase().includes("sql")) {
-      return (
-        <img
-          src={sqlIcon}
-          className="project__overlay__icon"
-          alt="sql icon"
-        ></img>
-      );
-    }
-  };
-  const getIconTailwind = (project) => {
-    if (project.tecnologies.toLowerCase().includes("tailwind")) {
-      return (
-        <img
-          src={tailwindIcon}
-          className="project__overlay__icon"
-          alt="tailwind icon"
-        ></img>
-      );
-    }
-  };
   const projectElements = projectsData.map((project, i) => {
     return (
       <>
         <article key={i} className="item project">
+          <section className="project__overlay project__circle">
+            <h2>{project.title}</h2>
+            <TechIconos project={project} />
+          </section>
           <img
             className="project__img project__circle"
             src={require("../images/" + project.nameimg + ".png")}
             alt=""
           />
-          <section className="project__overlay__tech">
-            {getIconHtml(project)}
-            {getIconCss(project)}
-            {getIconTailwind(project)}
-            {getIconReact(project)}
-            {getIconJs(project)}
-            {getIconVue(project)}
-            {getIconNode(project)}
-            {getIconApi(project)}
-            {getIconSql(project)}
-          </section>
+          <div className="project__desktop">
+            <TechIconos project={project} />
+          </div>
         </article>
       </>
     );
   });
 
   return (
-    <main>
-      <OwlCarousel
-        className="owl-theme"
-        items="1"
-        dots
-        autoplay
-        loop
-        margin={10}
-        autoplayHoverPause
-        autoplayTimeout="2000"
-      >
-        {projectElements}
-      </OwlCarousel>
-    </main>
+    <>
+      <main>
+        <section className="project__desktop">
+          <OwlCarousel
+            className="owl-theme"
+            items="1"
+            dots
+            autoplay
+            loop
+            margin={10}
+            autoplayHoverPause
+            autoplayTimeout="2000"
+          >
+            {projectElements}
+          </OwlCarousel>
+        </section>
+        <section className="project__tablet">
+          <OwlCarousel
+            className="owl-theme"
+            items="3"
+            dots
+            autoplay
+            loop
+            margin={10}
+            autoplayHoverPause
+            autoplayTimeout="2000"
+          >
+            {projectElements}
+          </OwlCarousel>
+        </section>
+      </main>
+    </>
   );
 }
 ProjectList.defaultProps = {};
