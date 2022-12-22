@@ -1,5 +1,7 @@
-import "../styles/App.scss";
 import "../styles/core/reset.scss";
+import "../styles/App.scss";
+import "../styles/core/iconos.scss";
+import "../styles/core/mediaqueries.scss";
 import "../styles/core/links.scss";
 import { Routes, Route } from "react-router-dom";
 import Header from "./Header";
@@ -16,7 +18,7 @@ function App() {
         <Route
           path="/"
           element={
-            <div className=" wrapper ">
+            <div className="wrapper wrapper__structure">
               <Header />
               <ProjectList />
               <Footer />
@@ -26,7 +28,7 @@ function App() {
         <Route
           path="/about-me"
           element={
-            <div className=" wrapper ">
+            <div className="wrapper contact__wrapper">
               <Header />
               <About />
               <Footer />

@@ -1,6 +1,11 @@
+@import "core/mediaqueries";
 .contact {
+  &__wrapper {
+    @include tablet {
+      height: 100vh;
+    }
+  }
   &__txt {
-    /* min-width: 15.3em; */
     text-align: center;
     font-weight: lighter;
     &__parg {

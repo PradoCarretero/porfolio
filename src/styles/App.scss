@@ -5,19 +5,18 @@ body {
   b {
     font-weight: 300;
   }
-
   background-color: rgb(41, 41, 41);
   color: rgb(140, 140, 140);
 }
 
 .wrapper {
   font-family: "Raleway", sans-serif;
-  padding: 1.5em 3em;
+  padding: 5vh 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &__structure {
     height: 100vh;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 }
