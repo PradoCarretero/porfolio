@@ -1,5 +1,5 @@
 import "../styles/About.scss";
-import picture from "../images/me6.png";
+import picture from "../images/me.png";
 
 function About() {
   return (

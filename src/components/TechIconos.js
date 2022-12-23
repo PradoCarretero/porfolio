@@ -3,7 +3,6 @@ import sqlIcon from "../images/sql.png";
 import tailwindIcon from "../images/tailwind.png";
 
 function TechIconos(props) {
-  console.log(props);
   const tecnologies = props.tecnologies;
   const getIconReact = (tecnologies) => {
     if (tecnologies.toLowerCase().includes("react")) {

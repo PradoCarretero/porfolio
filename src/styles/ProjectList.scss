@@ -1,5 +1,9 @@
 @import "core/mediaqueries";
-
+.owl-dots {
+  @include desktop {
+    display: none !important;
+  }
+}
 .owl-carousel span {
   background-color: rgb(140, 140, 140) !important;
   &:hover {
@@ -36,12 +40,6 @@
   }
   &__tablet {
     display: none;
-
-    @include desktop {
-      display: contents;
-      width: 130vw;
-      background-color: red;
-    }
   }
 
   &__img {

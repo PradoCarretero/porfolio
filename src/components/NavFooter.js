@@ -22,7 +22,7 @@ function NavFooter() {
           target="_blank"
           rel="noreferrer"
         >
-          <i class="fa-brands fa-github-alt fa-xs footer__nav__iconos"></i>
+          <i className="fa-brands fa-github-alt fa-xs footer__nav__iconos"></i>
         </a>
       </li>
       <li>

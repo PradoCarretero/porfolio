@@ -9,20 +9,28 @@ function ProjectList() {
   const projectElements = projectsData.map((project) => {
     return (
       <>
-        <article key={project.id} className="item project">
-          <section className="project__overlay project__circle">
-            <h2>{project.title}</h2>
-            <TechIconos tecnologies={project.tecnologies} />
-          </section>
-          <img
-            className="project__img project__circle"
-            src={require("../images/" + project.nameimg + ".png")}
-            alt=""
-          />
-          <div className="project__desktop">
-            <TechIconos tecnologies={project.tecnologies} />
-          </div>
-        </article>
+        <a
+          className="link"
+          href={project.github}
+          title={`ir al proyecto ${project.title}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <article key={project.id} className="item project">
+            <section className="project__overlay project__circle">
+              <h2>{project.title}</h2>
+              <TechIconos tecnologies={project.tecnologies} />
+            </section>
+            <img
+              className="project__img project__circle "
+              src={require("../images/" + project.nameimg + ".png")}
+              alt=""
+            />
+            <div className="project__desktop">
+              <TechIconos tecnologies={project.tecnologies} />
+            </div>
+          </article>
+        </a>
       </>
     );
   });
