@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer__items"></div>
       <Link className="link footer__items" to="/" title="ir a home">
-        <h2 className="footer__title font-1">front end developer</h2>
+        <h2 className="footer__title font-sm">front end developer</h2>
       </Link>
       <NavFooter />
     </footer>

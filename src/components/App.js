@@ -1,10 +1,5 @@
-import "../styles/core/reset.scss";
-import "../styles/App.scss";
-import "../styles/core/iconos.scss";
-import "../styles/core/mediaqueries.scss";
-import "../styles/core/links.scss";
-import "../styles/core/fonts.scss";
 import { Routes, Route } from "react-router-dom";
+import "../styles/App.scss";
 import Header from "./Header";
 import ProjectList from "./ProjectList";
 import Footer from "./Footer";

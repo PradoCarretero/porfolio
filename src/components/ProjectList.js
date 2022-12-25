@@ -25,7 +25,7 @@ function ProjectList() {
           src={require("../images/" + project.nameimg + ".png")}
           alt=""
         />
-        <div className="project__desktop">
+        <div className="project__dsk">
           <TechIconos tecnologies={project.tecnologies} />
         </div>
       </a>
@@ -35,7 +35,7 @@ function ProjectList() {
   return (
     <>
       <main>
-        <section className="project__desktop">
+        <section className="project__dsk">
           <OwlCarousel
             className="owl-theme"
             items="1"
@@ -49,7 +49,7 @@ function ProjectList() {
             {projectElements}
           </OwlCarousel>
         </section>
-        <section className="project__tablet">
+        <section className="project__tab">
           <OwlCarousel
             className="owl-theme"
             items="3"

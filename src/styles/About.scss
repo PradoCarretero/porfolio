@@ -1,7 +1,11 @@
+@import "core/reset";
+@import "core/variables";
 @import "core/mediaqueries";
+@import "core/links";
+@import "core/iconos";
+@import "core/fonts";
 
 .about {
-  /* padding: 6em; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,9 +13,7 @@
     padding: 6em;
   }
   &__txt {
-    /* min-width: 15.3rem; */
     text-align: center;
-    font-weight: lighter;
     margin-bottom: 3.5rem;
     max-width: 70vw;
     &__parg {

@@ -2,7 +2,7 @@ import "../styles/Contact.scss";
 
 function Contact() {
   return (
-    <main className="contact__txt">
+    <main className="contact__txt font-light">
       <p>Si quieres contactar conmigo puedes escribirme a:</p>
       <p>
         <b>p.carreteroayala@gmail.com</b>

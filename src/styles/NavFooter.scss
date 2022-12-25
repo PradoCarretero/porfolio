@@ -1,4 +1,9 @@
+@import "core/reset";
+@import "core/variables";
 @import "core/mediaqueries";
+@import "core/links";
+@import "core/iconos";
+@import "core/fonts";
 
 .footer {
   &__nav {
@@ -10,12 +15,12 @@
       justify-content: flex-end;
     }
     &__iconos {
-      color: rgb(41, 41, 41);
+      color: $darkcolor;
       padding: 0.3em;
-      background-color: rgb(140, 140, 140);
+      background-color: $mediumcolor;
       border-radius: 100em;
       &:hover {
-        background-color: orangered;
+        background-color: $maincolor;
         transition: 0.8s ease;
       }
     }

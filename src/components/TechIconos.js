@@ -45,10 +45,10 @@ function TechIconos(props) {
     if (tecnologies.toLowerCase().includes("sql")) {
       return (
         <>
-          <div className="tech__imgM">
+          <div className="tech__img__mvl">
             <img src={sqlIconOrg} className="tech__img" alt="sql icon"></img>
           </div>
-          <div className="tech__imgD">
+          <div className="tech__img__dsk">
             <img src={sqlIcon} className="tech__img" alt="sql icon"></img>
           </div>
         </>
@@ -59,14 +59,14 @@ function TechIconos(props) {
     if (tecnologies.toLowerCase().includes("tailwind")) {
       return (
         <>
-          <div className="tech__imgM">
+          <div className="tech__img__mvl">
             <img
               src={tailwindIconOrg}
               className="tech__img"
               alt="tailwind icon"
             ></img>
           </div>
-          <div className="tech__imgD">
+          <div className="tech__img__dsk">
             <img
               src={tailwindIcon}
               className="tech__img"
