@@ -1,6 +1,8 @@
 import "../styles/TechIconos.scss";
 import sqlIcon from "../images/sql.png";
+import sqlIconOrg from "../images/sql-org.png";
 import tailwindIcon from "../images/tailwind.png";
+import tailwindIconOrg from "../images/tailwind-org.png";
 
 function TechIconos(props) {
   const tecnologies = props.tecnologies;
@@ -41,13 +43,37 @@ function TechIconos(props) {
   };
   const getIconSql = (tecnologies) => {
     if (tecnologies.toLowerCase().includes("sql")) {
-      return <img src={sqlIcon} className="tech__img" alt="sql icon"></img>;
+      return (
+        <>
+          <div className="tech__imgM">
+            <img src={sqlIconOrg} className="tech__img" alt="sql icon"></img>
+          </div>
+          <div className="tech__imgD">
+            <img src={sqlIcon} className="tech__img" alt="sql icon"></img>
+          </div>
+        </>
+      );
     }
   };
   const getIconTailwind = (tecnologies) => {
     if (tecnologies.toLowerCase().includes("tailwind")) {
       return (
-        <img src={tailwindIcon} className="tech__img" alt="tailwind icon"></img>
+        <>
+          <div className="tech__imgM">
+            <img
+              src={tailwindIconOrg}
+              className="tech__img"
+              alt="tailwind icon"
+            ></img>
+          </div>
+          <div className="tech__imgD">
+            <img
+              src={tailwindIcon}
+              className="tech__img"
+              alt="tailwind icon"
+            ></img>
+          </div>
+        </>
       );
     }
   };

@@ -1,18 +1,10 @@
 @import "core/variables";
 body {
-  font-family: "Raleway", sans-serif;
-
-  line-height: 2em;
-  strong,
-  b {
-    font-weight: 300;
-  }
   background-color: rgb(41, 41, 41);
   color: rgb(140, 140, 140);
 }
 
 .wrapper {
-  font-family: "Raleway", sans-serif;
   padding: 5vh 7vh;
   display: flex;
   flex-direction: column;

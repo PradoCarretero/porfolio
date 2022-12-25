@@ -31,8 +31,6 @@
   align-items: center;
   flex-direction: column;
   color: white;
-  /*  line-height: 1rem; */
-
   &__desktop {
     @include desktop {
       display: none;
@@ -40,6 +38,9 @@
   }
   &__tablet {
     display: none;
+    @include desktop {
+      display: contents;
+    }
   }
 
   &__img {

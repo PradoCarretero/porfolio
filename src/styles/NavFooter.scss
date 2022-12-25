@@ -1,11 +1,14 @@
+@import "core/mediaqueries";
+
 .footer {
   &__nav {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 0.35em;
-
-    /* justify-content: flex-end; */
+    @include desktop {
+      justify-content: flex-end;
+    }
     &__iconos {
       color: rgb(41, 41, 41);
       padding: 0.3em;

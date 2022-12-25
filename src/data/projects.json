@@ -7,7 +7,7 @@
     "description": "",
     "github": "https://github.com/PradoCarretero/js-modulo-2-evaluacion-final-PradoCarretero",
     "page": "http://beta.adalab.es/modulo-2-evaluacion-final-PradoCarretero/",
-    "year": 2002,
+    "year": 2020,
     "id": 1
   },
   {
@@ -18,7 +18,7 @@
     "description": "",
     "github": "https://github.com/PradoCarretero/node-project-promo-p-module-4-team-2",
     "page": "https://hook-team.herokuapp.com/",
-    "year": 2002,
+    "year": 2020,
     "id": 2
   },
   {
@@ -27,9 +27,9 @@
     "tecnologies": "html, css,react, API REST",
     "nameimg": "owen-wilson",
     "github": "https://github.com/PradoCarretero/react-modulo-3-evaluacion-final-PradoCarretero",
-    "description": "http://beta.adalab.es/modulo-3-evaluacion-final-PradoCarretero/o",
+    "description": "http://beta.adalab.es/modulo-3-evaluacion-final-PradoCarretero",
     "page": "http://beta.adalab.es/modulo-3-evaluacion-final-PradoCarretero/",
-    "year": 2002,
+    "year": 2020,
     "id": 3
   },
   {
@@ -38,9 +38,9 @@
     "tecnologies": "html,Vue, Tailwind, API REST",
     "nameimg": "meal-flix",
     "description": "project1",
-    "github": "https://github.com/PradoCarretero/prueba-tecnica-vue/blob/main/src/App.vue",
+    "github": "https://github.com/PradoCarretero/prueba-tecnica-vue",
     "page": "",
-    "year": 2002,
+    "year": 2020,
     "id": 4
   },
   {
@@ -51,7 +51,7 @@
     "description": "",
     "github": "https://github.com/Adalab/project-promo-p-module-1-team-4",
     "page": "https://beta.adalab.es/project-promo-p-module-1-team-4/",
-    "year": 2002,
+    "year": 2020,
     "id": 5
   },
   {
@@ -62,7 +62,7 @@
     "description": "",
     "github": "https://github.com/PradoCarretero/scss-html-modulo-1-evaluacion-final-PradoCarretero",
     "page": "http://beta.adalab.es/modulo-1-evaluacion-final-PradoCarretero/",
-    "year": 2002,
+    "year": 2020,
     "id": 6
   }
 ]

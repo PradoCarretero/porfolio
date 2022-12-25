@@ -1,7 +1,10 @@
+@import "core/mediaqueries";
 .footer {
-  padding-top: 1.5rem;
   display: flex;
   flex-direction: column;
+  @include tablet {
+    padding-top: 1.5rem;
+  }
   &__items {
     width: 100%;
   }
@@ -9,5 +12,8 @@
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+  @include desktop {
+    flex-direction: row;
   }
 }
