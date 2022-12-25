@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.18e29fca.css",
+    "main.js": "./static/js/main.6a183a68.js",
+    "static/media/me.png": "./static/media/me.c3d1f4a858a578c265b1.png",
+    "static/media/background.png": "./static/media/background.6cc0aab57c4e4abd06b3.png",
+    "static/media/miudinas.png": "./static/media/miudinas.fb64e4c7b54665b5d5f4.png",
+    "static/media/owen-wilson.png": "./static/media/owen-wilson.1c52adc29b7600720bc8.png",
+    "static/media/logo-name.png": "./static/media/logo-name.26acf65333ab0fcddedb.png",
+    "static/media/awesome-profile-cards.png": "./static/media/awesome-profile-cards.971b175836057f26c737.png",
+    "static/media/tailwind.png": "./static/media/tailwind.d76fdefbfcb77804dac1.png",
+    "static/media/tailwind-org.png": "./static/media/tailwind-org.61a55d6ecb5c0d55e294.png",
+    "static/media/sundrink.png": "./static/media/sundrink.120aaea01d4548018142.png",
+    "static/media/meal-flix.png": "./static/media/meal-flix.53c0a988050126b2cc7c.png",
+    "static/media/openspaces.png": "./static/media/openspaces.ec9ec4f767e79e551471.png",
+    "index.html": "./index.html",
+    "main.18e29fca.css.map": "./static/css/main.18e29fca.css.map",
+    "main.6a183a68.js.map": "./static/js/main.6a183a68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18e29fca.css",
+    "static/js/main.6a183a68.js"
+  ]
+}
