@@ -12,12 +12,12 @@ function About() {
           técnico-artístico, hasta dar con el mundo de la programación.
         </p>
         <p className="about__txt__parg">
-          Valoro mucho los <b>lenguajes visuales</b>, los detalles a nivel
-          <b>pixel perfect</b> y el <b>código limpio y ordenado</b>. He
+          Valoro mucho los <b>lenguajes visuales</b>, los detalles a un nivel
+          <b> pixel perfect</b> y el <b>código limpio y ordenado</b>. He
           realizado el <b>bootcamp de Adalab</b> de programación Web orientado a
-          <b>front-end</b> y actualmente me formo en la
-          <b>academia de 42 Madrid</b> para consolidar un perfil
-          <b>full-stack</b>.
+          <b> front-end</b> y actualmente me formo en la
+          <b> academia de 42 Madrid</b> para consolidar un perfil
+          <b> full-stack</b>.
         </p>
         <p className="about__txt__parg">
           Me encantaría formar parte del equipo de una empresa que me permita
